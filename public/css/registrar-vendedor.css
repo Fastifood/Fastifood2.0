@@ -1,0 +1,621 @@
+.registrar-lanchonete-body {
+    padding: 0 0 4rem 0 !important;
+    margin: 0 !important;
+    background-image: url('../images/registrar-vendedor-img/bg-blur.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 1000px !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+    margin: 3rem auto 0 auto;
+}
+
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(80, 80, 80, 0.2) !important;
+  }
+
+.brand-vendedor-title {
+    display: flex;
+}
+
+.card-vendedor-title {
+    color: rgb(80, 80, 80);
+}
+
+.card-vendedor-body {
+    padding: 1rem 1rem;
+}
+
+.registrar-vendedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        margin: 0;
+        font-size: 1.75rem;
+    }
+
+    & img {
+        margin: 0 0.5rem 0 0;
+        width: 8rem;
+    }
+}
+
+.container {
+    margin-top: 0 !important;
+}
+
+.step-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.25rem 0 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step-menu-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(80, 80, 80);
+    transition: color 0.3s ease;
+}
+
+.step-menu-item span {
+    text-align: center;
+    display: inline-block;
+    font-size: 5rem;
+    color: rgb(80, 80, 80);
+    line-height: 50px;
+    font-weight: bold;
+    margin: 0 0.5rem 0 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-menu-item.active span {
+    color: rgb(235, 150, 39)
+}
+
+.step-menu-item.active {
+    color: rgb(235, 150, 39);
+    font-weight: bold;
+}
+
+.formbold-info-step {
+    text-align: center;
+
+    & h1 {
+        color: rgb(80, 80, 80);
+        font-size: 1.5rem;
+    }
+}
+
+.formbold-info-step,
+.formbold-info-step-endereco {
+    margin: 2rem 0 0 0;
+}
+
+.formbold-form-step-4 {
+
+    & h2 {
+        font-size: 1.5625rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    & .formbold-info-step-4 {
+        margin: 0 auto 1rem auto;
+        max-width: 43.75rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Etapas do Formulário */
+.formbold-form-step {
+    display: none;
+}
+
+.formbold-form-step.active {
+    display: block;
+}
+
+.formbold-input-flex {
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+}
+
+.inputs-cadastro-label {
+    font-weight: normal;
+    font-family: 'poppins', sans-serif;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.formbold-form-input:focus {
+    border-color: rgb(235, 150, 39);
+    outline: none;
+    box-shadow: 0 0 12px rgba(255, 102, 0, 0.3);
+    background-color: #fff;
+}
+
+/* Botões */
+.formbold-form-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+
+    & .formbold-back-btn, .formbold-next-btn {
+        line-height: 1.5rem;
+        padding: 10px 20px;
+        font-weight: 500;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    & .formbold-back-btn {
+        background-color: transparent !important;
+        color: rgb(120, 120, 120);
+        display: none;
+
+        & i  {
+            transition: all 0.3s ease;
+        }
+    }
+
+    & .formbold-next-btn {
+        background-color: rgb(235, 150, 39);
+        color: #fff;
+    }
+
+    & .formbold-back-btn.active {
+        display: block;
+    }
+
+    & .formbold-next-btn:hover {
+        background-color: rgb(215, 134, 33);
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    & .formbold-back-btn:hover {
+        background-color: rgb(194, 194, 194) !important;
+
+        & i {
+            transform: translateX(-3px); /* Translação suave ao passar o mouse */
+        }
+    }
+}
+
+.return-dados {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #dadada;
+}
+
+.confirm-button {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    font-size: 1rem;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 1.5625rem;
+    border: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+    background-color: rgb(235, 150, 39);
+    color: white;
+}
+
+.confirm-button:hover {
+    background-color: rgb(215, 134, 33);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* FIM STEPS */
+
+/* Oculta o radio button original */
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Estiliza o elemento personalizado (o "radio") */
+.custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.radio-mark {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+/* O estado "checked" do radio button personalizado */
+input:checked + .radio-mark {
+    background-color:rgb(235, 150, 39);
+}
+
+/* Estilo para o círculo dentro do botão quando marcado */
+.radio-mark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Exibe o círculo quando o radio button está marcado */
+input:checked + .radio-mark::after {
+    display: block;
+}
+
+.formbold-form-input:focus {
+    border-color: rgb(235, 150, 39);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-form-label {
+    margin: 2.5rem auto 1rem auto !important;
+    color: rgb(92, 92, 92);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    display: block;
+}
+
+.form-wrapper {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formbold-form-step-1 {
+    margin: 1.25rem auto 0 auto;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.form-label {
+    border-radius: 100rem;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+    border: 1.5px solid rgb(235, 150, 39);
+}
+
+.form-label p {
+    color: rgb(120, 120, 120);
+    margin: 0 auto;
+}
+
+.formbold-form-step-1,
+.formbold-form-step-2,
+.formbold-form-step-3,
+.formbold-form-step-3,
+.formbold-form-step-4 {
+    display: none;
+}
+
+.formbold-form-step-1.active,
+.formbold-form-step-2.active,
+.formbold-form-step-3.active,
+.formbold-form-step-4.active {
+    display: block;
+}
+
+.formbold-form-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 25px;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cep-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+.cep-group input {
+    flex: 1;
+}
+
+.cep-group button {
+    transition: 0.3s ease;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(235, 150, 39);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.cep-group button:hover {
+    background-color: rgb(215, 134, 33);
+}
+
+.inputs-step3-url-wrapper {
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color:rgb(120, 120, 120, 0.6);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 37.5rem;
+
+    & .inputs-step3-url-box {
+        height: 3.125rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .label-url {
+            font-weight: 500;
+            font-size: 1rem;
+            margin: 0 0.5rem 0 0 !important;
+            color: rgb(255, 255, 255);
+        }
+
+        .effectbar {
+            border-radius: 0.5rem 0 0 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 1rem 0.75rem;
+            background-color: rgba(235, 150, 30);
+
+            & span {
+                font-size: 1.25rem;
+                color: white;
+                animation: anim-opacity 1s infinite;
+            }
+        }
+
+        & input {
+            font-size: 0.875rem;
+            border: 1.5px solid rgba(235, 150, 30);
+            height: 100%;
+            border-radius: 0 0.5rem 0.5rem 0 !important;
+        }
+
+        & input::placeholder {
+            opacity: 0.7;
+            animation: anim-opacity 1s infinite;
+        }
+
+        & input:focus::placeholder {
+            opacity: 0;
+            animation: none;
+        }
+    }
+
+    & .invalid-feedback {
+        margin: 1rem 0 0 0;
+        text-align: center;
+        display: block !important;
+    }
+}
+
+@keyframes anim-opacity {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes anim-arrowleft {
+    0% {
+        transform: translate(-5px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.return-dados-wrapper {
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #dadada;
+    max-width: 1000px;
+
+    & .return-tipo {
+        margin: 0 0 0.5rem;
+
+        & h2 {
+            text-align: left !important;
+            color: rgb(80, 80, 80);
+            font-size: 1.25rem;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+
+            & p {
+                font-weight: 600;
+                margin: 0.3rem 0 0.3rem 0.5rem;
+            }
+        }
+    }
+
+    & .return-informacao-restaurante {
+        margin: 0 0 0.5rem;
+
+        & h2 {
+            text-align: left !important;
+            color: rgb(80, 80, 80);
+            font-size: 1.25rem;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+
+            & p {
+                font-weight: 600;
+                margin: 0.3rem 0 0.3rem 0.5rem;
+            }
+        }
+    }
+
+    & .return-suas-informacoes {
+        margin: 0 0 0.5rem;
+
+        & h2 {
+            text-align: left !important;
+            color: rgb(80, 80, 80);
+            font-size: 1.25rem;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+
+            & p {
+                font-weight: 600;
+                margin: 0.3rem 0 0.3rem 0.5rem;
+            }
+        }
+    }
+
+    & .return-endereco-restaurante {
+        margin: 0 0 0.5rem;
+
+        & h2 {
+            text-align: left !important;
+            color: rgb(80, 80, 80);
+            font-size: 1.25rem;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+
+            & p {
+                font-weight: 600;
+                margin: 0.3rem 0 0.3rem 0.5rem;
+            }
+        }
+    }
+
+    & .return-url {
+        margin: 0 0 0.5rem;
+
+        & h2 {
+            text-align: left !important;
+            color: rgb(80, 80, 80);
+            font-size: 1.25rem;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+
+            & p {
+                font-weight: 600;
+                margin: 0.3rem 0 0.3rem 0.5rem;
+            }
+        }
+    }
+}
+
+#previewURL {
+    text-align: center;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+}
+
+#password.is-invalid {
+    background-image: none;
+}
+
+#password_confirmation.is-invalid {
+    background-image: none;
+    border-right: 0rem !important;
+}
+
+.is-invalid {
+    border-color: var(--bs-danger);
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+.invalid-feedback {
+    color: var(--bs-danger);
+}

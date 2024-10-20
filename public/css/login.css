@@ -1,0 +1,58 @@
+.logo-login {
+
+    & img {
+        width: 12.625rem;
+        margin: 0 0 0 0.25rem;
+    }
+}
+
+.btn-convidado {
+    margin: 1rem auto 1rem auto;
+}
+
+.text-convidado {
+  color: var(--bs-primary);
+  cursor: pointer;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+}
+
+#password.is-invalid {
+    background-image: none;
+}
+
+#password_confirmation.is-invalid {
+    background-image: none;
+    border-right: 0rem !important;
+}
+
+.is-invalid {
+    border-color: var(--bs-danger);
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+.invalid-feedback {
+    color: var(--bs-danger);
+}
+
+.body .sign-in-your .dlab-sign-up:after,
+.body .sign-in-your .dlab-sign-up:before {
+  width: 9.25rem !important;
+}

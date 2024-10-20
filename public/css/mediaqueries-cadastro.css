@@ -1,0 +1,14 @@
+@media only screen and (max-width: 575px) {
+    .registrar-logo img {
+        font-size: 1.5rem;
+    }
+
+    .registrar-logo h1 {
+        font-size: 1.625rem;
+    }
+
+    .registrar-logo img {
+        width: 3.75rem;
+        margin-right: 0.5rem;
+    }
+}

@@ -1,0 +1,10 @@
+
+@media only screen and (max-width: 47.9375rem) {
+    .logo-login {
+      margin: 1.375rem 0;
+
+      & img {
+        width: 10rem !important;
+      }
+    }
+}

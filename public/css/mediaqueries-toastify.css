@@ -1,0 +1,22 @@
+@media only screen and (max-width: 800px) {
+    .toastify-right, .toastify-left {
+        justify-content: center;
+        left: 50% !important;
+        right: 0 !important;
+        transform: translateX(-50%) !important; /* Centralizar horizontalmente */
+        width: 65% !important; /* Definir largura de 80% */
+        max-width: none !important;
+        top: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .toastify-right, .toastify-left {
+        left: 50% !important;
+        right: 0 !important;
+        transform: translateX(-50%) !important; /* Centraliza horizontalmente */
+        width: 95% !important; /* Largura de 80% */
+        max-width: none !important;
+        top: 10px !important;
+    }
+}

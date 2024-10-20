@@ -1,0 +1,222 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: normal 0.625rem;
+    }
+
+    .registrar-lanchonete-body {
+        padding: 0 0 1rem 0 !important;
+    }
+
+    .card {
+        padding: 3rem 0.625rem 0.625rem 0.625rem;
+        padding-top: 3rem;
+    }
+
+    .card-vendedor-body {
+        padding: 0 !important;
+    }
+
+    .step-menu {
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        gap: 1.25rem !important;
+    }
+
+    .step-menu-item span {
+        font-size: 3.75rem !important;
+    }
+
+    .step-menu-item {
+        display: flex !important;
+        align-items: center !important;
+        margin: 0.3125rem 0 !important;
+        text-align: left !important;
+        font-size: 1rem !important;
+    }
+
+    .formbold-form-input {
+        font-size: 0.875rem !important;
+    }
+
+    .formbold-form-step-4 {
+
+        & .formbold-info-step-4 {
+            font-size: 1rem;
+
+            & h2 {
+                margin: 0 0 0.3125rem 0;
+                font-size: 1rem;
+            }
+
+            & p {
+                width: 100%;
+                margin: 0 auto !important;
+            }
+        }
+
+        & .return-dados-wrapper {
+
+            & .return-tipo {
+
+                & h2 {
+                    margin: 0.25rem 0;
+                    font-size: 1rem !important;
+                }
+
+                & div {
+                    margin-bottom: 0.5rem;
+                    display: block;
+                    font-size: 0.9rem !important;
+
+                    & p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .return-informacao-restaurante {
+
+                & h2 {
+                    margin: 0.25rem 0;
+                    font-size: 1rem !important;
+                }
+
+                & .dadosCNPJ-active-mobile, .dadosRazaoSocial-box {
+                    display: block !important;
+                }
+
+                & div {
+                    margin-bottom: 0.5rem;
+                    display: block;
+                    font-size: 0.9rem !important;
+
+                    & p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .return-suas-informacoes {
+
+                & h2 {
+                    margin: 0.25rem 0;
+                    font-size: 1rem !important;
+                }
+
+                & div {
+                    margin-bottom: 0.5rem;
+                    display: block;
+                    font-size: 0.9rem  !important;
+
+                    & p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .return-endereco-restaurante {
+                & h2 {
+                    margin: 0.25rem 0;
+                    font-size: 1rem !important;
+                }
+
+                & div {
+                    margin-bottom: 0.5rem;
+                    display: block;
+                    font-size: 0.9rem  !important;
+
+                    & p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            & .return-url {
+                & h2 {
+                    margin: 0.25rem 0;
+                    font-size: 1rem !important;
+                }
+
+                & div {
+                    margin-bottom: 0.5rem;
+                    display: block;
+                    font-size: 0.9rem !important;
+
+                    & p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .card-vendedor-header {
+        display: block !important;
+    }
+
+    .registrar-vendedor-logo {
+        display: flex !important;
+        justify-content: normal !important;
+
+        & img {
+            width: 5.4375rem !important;
+            margin: 0 !important;
+        }
+
+        & h1 {
+            font-size: 1.5625rem !important;
+        }
+    }
+
+    .card-vendedor-title {
+        margin: 2rem 0 0 0 !important;
+        text-align: center !important;
+
+        & h4 {
+            font-size: 1.25rem !important;
+        }
+    }
+
+    .formbold-info-step {
+        & h1 {
+            font-size: 1.15rem !important;
+        }
+
+        & p {
+            font-size: 0.75rem !important;
+        }
+    }
+
+    .formbold-form-step-4 {
+        & p {
+            margin: 0 auto;
+        }
+    }
+
+    .form-label {
+
+        & p {
+            font-size: 0.7rem;
+        }
+    }
+
+    .inputs-cadastro-label {
+        font-size: 0.75rem !important;
+    }
+
+    .formbold-form-btn-wrapper {
+
+        & button {
+            font-size: 0.8rem !important;
+        }
+    }
+
+    .cep-group {
+
+        & button {
+            font-size: 0.8rem !important;
+        }
+    }
+}
